@@ -1,0 +1,10 @@
+﻿.vs
+Recordings
+Library
+Logs
+obj
+UserSettings
+.vsconfig
+Assembly-CSharp.csproj
+*.csproj
+*.sln

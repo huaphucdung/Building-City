@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e752b0f01b843346910c1a41dc11ee0, type: 3}
+  m_Name: BuildingDatabaseSO
+  m_EditorClassIdentifier: 
+  dictionaryData:
+    _serializedList:
+    - Key: AutoService
+      Value:
+        Name: Auto Service
+        Size: {x: 2, y: 1}
+        price: 500
+        type: 0
+        Prefab: {fileID: 3360322193307042606, guid: cb5a5d765a77a1e4695649aae7bbb380,
+          type: 3}
+    - Key: Bakery
+      Value:
+        Name: Bakery
+        Size: {x: 2, y: 1}
+        price: 300
+        type: 0
+        Prefab: {fileID: 4841571214431594765, guid: a0c7367176d980246a79d16c5bdeda35,
+          type: 3}
+    - Key: Bar
+      Value:
+        Name: Bar
+        Size: {x: 1, y: 1}
+        price: 300
+        type: 0
+        Prefab: {fileID: 5659813576398242563, guid: 861ffe8cb2a697245a03dee7a74ce7d0,
+          type: 3}
+    - Key: BookShops
+      Value:
+        Name: Books Shop
+        Size: {x: 1, y: 1}
+        price: 200
+        type: 0
+        Prefab: {fileID: 7384807078054323117, guid: 0d03ad69df905594da73e00cb3bdcefc,
+          type: 3}
+    - Key: ChickenShop
+      Value:
+        Name: Chicken Shop
+        Size: {x: 2, y: 2}
+        price: 500
+        type: 0
+        Prefab: {fileID: 6590812607592729937, guid: f85c5140a8f26d74db619e859ae8d2b1,
+          type: 3}
+    - Key: ClothingShop
+      Value:
+        Name: Clothing Shop
+        Size: {x: 1, y: 1}
+        price: 150
+        type: 0
+        Prefab: {fileID: 444674430851105159, guid: 82c8f77c9df293c46bb3adacd70e2cd4,
+          type: 3}
+    - Key: CoffeeShop
+      Value:
+        Name: Coffee Shop
+        Size: {x: 2, y: 2}
+        price: 550
+        type: 0
+        Prefab: {fileID: 5621773939202002389, guid: 7b08105fa20928a49aaa043df8d6be32,
+          type: 3}
+    - Key: Factory
+      Value:
+        Name: Factory
+        Size: {x: 2, y: 3}
+        price: 2500
+        type: 2
+        Prefab: {fileID: 3321795943798696410, guid: acfbffb78b424b94fb27b09a4ab881b0,
+          type: 3}
+    - Key: Fast Food
+      Value:
+        Name: Fast Food
+        Size: {x: 1, y: 1}
+        price: 100
+        type: 0
+        Prefab: {fileID: 7010711057536537059, guid: c442aa60900373d4f89b97609b09612e,
+          type: 3}
+    - Key: Fuits Shop
+      Value:
+        Name: Fruits Shop
+        Size: {x: 1, y: 1}
+        price: 100
+        type: 0
+        Prefab: {fileID: 7087612675291725770, guid: 30f548011e8bba24baf0b00d3e6f3a85,
+          type: 3}
+    - Key: GasStation
+      Value:
+        Name: Gas Station
+        Size: {x: 2, y: 3}
+        price: 3000
+        type: 2
+        Prefab: {fileID: 3319152290030063549, guid: 1c2cbff53fd541a42a332649c038719f,
+          type: 3}
+    - Key: GitftShop
+      Value:
+        Name: Gift Shop
+        Size: {x: 1, y: 1}
+        price: 300
+        type: 0
+        Prefab: {fileID: 2934117710161499934, guid: 005456272c1574648b6697441496a41b,
+          type: 3}
+    - Key: House
+      Value:
+        Name: House
+        Size: {x: 2, y: 2}
+        price: 300
+        type: 1
+        Prefab: {fileID: 7348588197170729413, guid: 3e2a8d0ec23efab48807c2328ac3f6ea,
+          type: 3}
+    - Key: House2
+      Value:
+        Name: House2
+        Size: {x: 3, y: 2}
+        price: 500
+        type: 1
+        Prefab: {fileID: 2219467774589676713, guid: 54fe10aea1b1e9f4693fceb35136fcc5,
+          type: 3}
+    - Key: Pizza
+      Value:
+        Name: Pizza
+        Size: {x: 2, y: 2}
+        price: 500
+        type: 0
+        Prefab: {fileID: 1970505589695324587, guid: 3612affbe2ef67548b5ca82acb1fe7b8,
+          type: 3}
+    - Key: Residential
+      Value:
+        Name: Residential
+        Size: {x: 2, y: 2}
+        price: 1000
+        type: 1
+        Prefab: {fileID: 2311879314907756751, guid: bc7eed29caf823943b64b0d3ebcc17fb,
+          type: 3}
+    - Key: Sky
+      Value:
+        Name: Sky
+        Size: {x: 2, y: 2}
+        price: 1500
+        type: 0
+        Prefab: {fileID: 4820217672719180766, guid: b441bf9744c13f94288275f61c0c3dbf,
+          type: 3}
+    - Key: SkySmall
+      Value:
+        Name: Sky Small
+        Size: {x: 2, y: 2}
+        price: 1200
+        type: 0
+        Prefab: {fileID: 2311879314907756751, guid: bc7eed29caf823943b64b0d3ebcc17fb,
+          type: 3}
+    - Key: Stadium
+      Value:
+        Name: Statdium
+        Size: {x: 4, y: 4}
+        price: 5000
+        type: 2
+        Prefab: {fileID: 4727286469894641691, guid: 170dbb604a48dd445b4e52900fc0f592,
+          type: 3}
+    - Key: SuperMarket
+      Value:
+        Name: Super Market
+        Size: {x: 3, y: 2}
+        price: 1500
+        type: 0
+        Prefab: {fileID: 8773489145753980832, guid: 2797ec6cd1f89b148b46e3a193f937c3,
+          type: 3}
+    - Key: Road
+      Value:
+        Name: Road
+        Size: {x: 1, y: 1}
+        price: 50
+        type: 2
+        Prefab: {fileID: 3065368396610995690, guid: 8abcbd14d98f06d49ae8b1c306b7e5d6,
+          type: 3}
