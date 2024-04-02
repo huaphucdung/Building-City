@@ -17,11 +17,15 @@ public class CameraMovement : MonoBehaviour
         AddInputAction();
     }
 
+    public void UnInitalize()
+    {
+        RemoveInputAction();
+    }
+
     private void AddInputAction()
     {
         InputManager.MouseLeftStartedAction += OnMouseLeftStarted;
         InputManager.MouseLeftCanceledAction += OnMouseLeftCanceld;
-
         InputManager.MouseDragMoveAction += OnMouseDragMove;
     }
 

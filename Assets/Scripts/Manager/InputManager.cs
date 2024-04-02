@@ -33,10 +33,10 @@ public static class InputManager
         uiActions = inputActions.UI;
         inputActions.Enable();
 
-        AddInputAction();
+        
     }
 
-    private static void AddInputAction()
+    public static void AddInputAction()
     {
         playerActions.MousePosition.performed += OnMouseMove;
 
@@ -47,6 +47,19 @@ public static class InputManager
         playerActions.Rotation.performed += OnRotaton;
 
         playerActions.MouseDragMove.performed += OnMouseDragMove;
+    }
+
+    public static void RemoveInputAction()
+    {
+        playerActions.MousePosition.performed -= OnMouseMove;
+
+        playerActions.MouseLeftTap.performed -= OnMouseLeftTap;
+        playerActions.MouseLeft.started -= OnMouseLeftClkied;
+        playerActions.MouseLeft.canceled -= OnMouseLeftClkied;
+
+        playerActions.Rotation.performed -= OnRotaton;
+
+        playerActions.MouseDragMove.performed -= OnMouseDragMove;
     }
 
     private static void OnMouseMove(InputAction.CallbackContext ctx)

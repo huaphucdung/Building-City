@@ -62,13 +62,13 @@ public class GameplayUI : MonoBehaviour
         ShowBtn.onClick.AddListener(OnShowBtnClicekd);
         HideBtn.onClick.AddListener(OnHideBtnCliked);
         levelBtn.onClick.AddListener(OnLevelBtnClicked);
+        QuitBtn.onClick.AddListener(OnQuitBtnCliked);
 
         shopToggle.onValueChanged.AddListener(OnToggleChange);
         houseToggle.onValueChanged.AddListener(OnToggleChange);
         decorateToggle.onValueChanged.AddListener(OnToggleChange);
     }
 
- 
     public void AddBuildingItem(string key, BuildingData data, Action<object> callbackAction)
     {
         BuildingItem newItem = Instantiate(itemPrefab, itemsTransform);
@@ -100,6 +100,11 @@ public class GameplayUI : MonoBehaviour
     private void OnLevelBtnClicked()
     {
         gameManager.ShowUpgradeUI();
+    }
+
+    private void OnQuitBtnCliked()
+    {
+        gameManager.ChangeToMenu();
     }
 
     private void OnToggleChange(bool value)

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public enum GameMode
 {
@@ -64,6 +65,7 @@ public class GameManager : MonoBehaviour
 
         //Init InputManager
         InputManager.Initialize();
+        
         AddInputAction();
 
         cameraMovement.Initialize();
@@ -109,12 +111,14 @@ public class GameManager : MonoBehaviour
 
     private void AddInputAction()
     {
+        InputManager.AddInputAction();
         InputManager.MouseMoveAction += SelectCellPosition;
         ui.OnShowBuildingListAction += ChangeMode;
     }
 
     private void RemoveInputActoin()
     {
+        InputManager.RemoveInputAction();
         InputManager.MouseMoveAction -= SelectCellPosition;
         ui.OnShowBuildingListAction -= ChangeMode;
     }
@@ -204,6 +208,13 @@ public class GameManager : MonoBehaviour
             ChangeCoin(-requireData.free);
         }
 
+    }
+
+    public void ChangeToMenu()
+    {
+        cameraMovement.UnInitalize();
+        RemoveInputActoin();
+        SceneManager.LoadScene("Menu");
     }
     #endregion
 
